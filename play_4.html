@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDION PLAY</title>
+    <link rel="icon" href="LOGO.png" type="icon/image">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="LOGO.png" alt="brand_logo">
+        <h1>Listen , Feel , Relax !</h1>
+    </div>
+    <br>
+
+    <br>
+    <div class="greet">
+        <h1>
+            Hello There ! </h1> 
+            <br>
+        <h2>
+            Hindi ~ Punjabi Flavour
+        </h2>
+    </div>
+    <br>
+    <br>
+    <div class="s1">
+        <h3>Paagal</h3>
+        <audio controls id="song_1">
+            <source src="media/song_23.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon">
+    </div><br>
+    <div class="s2">
+        <h3>Bam Bholle</h3>
+        <audio controls id="song_2">
+            <source src="media/song_24.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_2">
+    </div><br>
+    <div class="s3">
+        <h3>BurjKhaifa</h3>
+        <audio controls id="song_3">
+            <source src="media/song_25.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_3">
+    </div><br>
+    <div class="s4">
+        <h3>Guru Nalo Ishq Mitha</h3>
+        <audio controls id="song_4">
+            <source src="media/song_26.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_4">
+    </div><br>
+    <div class="s5">
+        <h3>Shaitaan Ka Saala</h3>
+        <audio controls id="song_5">
+            <source src="media/song_27.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_5">
+    </div><br>
+    <div class="s6">
+        <h3>Jingle Bell</h3>
+        <audio controls id="song_6">
+            <source src="media/song_28.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_6">
+    </div><br>
+    <div class="s7">
+        <h3>Loca</h3>
+        <audio controls id="song_7">
+            <source src="media/song_29.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_7">
+    </div><br>
+    <div class="s8">
+        <h3>Marvel Anthem</h3>
+        <audio controls id="song_8">
+            <source src="media/song_30.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_8">
+    </div><br>
+    <div class="s9">
+        <h3>Muqabala</h3>
+        <audio controls id="song_9">
+            <source src="song_31.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_9">
+    </div><br>
+    <div class="s10">
+        <h3>Nachungaa Aise</h3>
+        <audio controls id="song_10">
+            <source src="song_32.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_10">
+    </div><br>
+    <div class="s11">
+        <h3>Naachne Ka Shaaunq</h3>
+        <audio controls id="song_11">
+            <source src="song_33.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_11">
+    </div><br>
+    <div class="s12">
+        <h3>Satisfya</h3>
+        <audio controls id="song_12">
+            <source src="song_34.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_12">
+    </div><br>
+    <div class="s13">
+        <h3>The Big Bull</h3>
+        <audio controls id="song_13">
+            <source src="song_35.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_13">
+    </div><br>
+    <br><hr><br>
+    <div class="footer">
+        Ⓒ Indion Techs. Inc. , 2022
+    </div>    <hr>
+</body>
+<style>
+    @media (max-width:900px){
+        .header{
+            height: 50vh;
+            width: 100vw;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .header img{
+            padding-left:70px;
+            padding-top: 60px;
+            width: 60vw;
+            height: 30vh;
+        }
+        .header h1{
+            font-size: 25px;
+            width:70vw;
+        }
+        .s1, .s2 , .s3, .s4 , .s5,.s6,.s7, .s8 , .s9, .s10 , .s11,.s12,.s13{
+            flex-direction: column;
+            padding-left: 20px;
+        }
+
+    }
+</style>
+<script>
+    var song_1 = document.getElementById("song_1");
+    var icon = document.getElementById('icon');
+
+    icon.onclick = function(){
+        if(song_1.paused){
+            song_1.play();
+            icon.src="Pause.png";
+        }
+        else{
+            song_1.pause();
+            icon.src="Play.png";
+        }
+    }
+    var song_2 = document.getElementById("song_2");
+    var icon_2 = document.getElementById('icon_2');
+    icon_2.onclick = function(){
+        if(song_2.paused){
+            song_2.play();
+            icon_2.src="Pause.png";
+        }
+        else{
+            song_2.pause();
+            icon_2.src="Play.png";
+        }
+    }
+    var song_3 = document.getElementById("song_3");
+    var icon_3 = document.getElementById('icon_3');
+    icon_3.onclick = function(){
+        if(song_3.paused){
+            song_3.play();
+            icon_3.src="Pause.png";
+        }
+        else{
+            song_3.pause();
+            icon_3.src="Play.png";
+        }
+    }
+    var song_4 = document.getElementById("song_4");
+    var icon_4 = document.getElementById('icon_4');
+    icon_4.onclick = function(){
+        if(song_4.paused){
+            song_4.play();
+            icon_4.src="Pause.png";
+        }
+        else{
+            song_4.pause();
+            icon_4.src="Play.png";
+        }
+    }   
+    var song_5 = document.getElementById("song_5");
+    var icon_5 = document.getElementById('icon_5');
+    icon_5.onclick = function(){
+        if(song_5.paused){
+            song_5.play();
+            icon_5.src="Pause.png";
+        }
+        else{
+            song_5.pause();
+            icon_5.src="Play.png";
+        }
+    }
+    var song_6 = document.getElementById("song_6");
+    var icon_6 = document.getElementById('icon_6');
+    icon_6.onclick = function(){
+        if(song_6.paused){
+            song_6.play();
+            icon_6.src="Pause.png";
+        }
+        else{
+            song_6.pause();
+            icon_6.src="Play.png";
+        }
+    }
+    var song_7 = document.getElementById("song_7");
+    var icon_7 = document.getElementById('icon_7');
+    icon_7.onclick = function(){
+        if(song_7.paused){
+            song_7.play();
+            icon_7.src="Pause.png";
+        }
+        else{
+            song_7.pause();
+            icon_7.src="Play.png";
+        }
+    }
+    var song_8 = document.getElementById("song_8");
+    var icon_8 = document.getElementById('icon_8');
+    icon_8.onclick = function(){
+        if(song_8.paused){
+            song_8.play();
+            icon_8.src="Pause.png";
+        }
+        else{
+            song_8.pause();
+            icon_8.src="Play.png";
+        }
+    }
+    var song_9 = document.getElementById("song_9");
+    var icon_9 = document.getElementById('icon_9');
+    icon_9.onclick = function(){
+        if(song_9.paused){
+            song_9.play();
+            icon_9.src="Pause.png";
+        }
+        else{
+            song_9.pause();
+            icon_9.src="Play.png";
+        }
+    }
+    var song_10 = document.getElementById("song_10");
+    var icon_10 = document.getElementById('icon_10');
+    icon_10.onclick = function(){
+        if(song_10.paused){
+            song_10.play();
+            icon_10.src="Pause.png";
+        }
+        else{
+            song_10.pause();
+            icon_10.src="Play.png";
+        }
+    }
+    var song_11 = document.getElementById("song_11");
+    var icon_11 = document.getElementById('icon_11');
+    icon_11.onclick = function(){
+        if(song_11.paused){
+            song_11.play();
+            icon_11.src="Pause.png";
+        }
+        else{
+            song_11.pause();
+            icon_11.src="Play.png";
+        }
+    }
+    var song_12 = document.getElementById("song_12");
+    var icon_12 = document.getElementById('icon_12');
+    icon_12.onclick = function(){
+        if(song_12.paused){
+            song_12.play();
+            icon_12.src="Pause.png";
+        }
+        else{
+            song_12.pause();
+            icon_12.src="Play.png";
+        }
+    }
+    var song_13 = document.getElementById("song_13");
+    var icon_13 = document.getElementById('icon_13');
+    icon_13.onclick = function(){
+        if(song_13.paused){
+            song_13.play();
+            icon_13.src="Pause.png";
+        }
+        else{
+            song_13.pause();
+            icon_13.src="Play.png";
+        }
+    }
+</script>
+</html>
