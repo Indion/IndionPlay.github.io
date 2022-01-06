@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDION PLAY</title>
+    <link rel="icon" href="LOGO.png" type="icon/image">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="LOGO.png" alt="brand_logo">
+        <h1>Listen , Feel , Relax !</h1>
+    </div>
+    <br>
+    <nav>
+        <ul>
+            <a href="about.html">
+                <li>About Us</li>
+            </a>
+            <a href="more.html">
+                <li>More</li>
+            </a>
+        </ul>
+    </nav>
+    <br>
+    <div class="greet">
+        <h1>
+            Hello There ! </h1>
+        <br>
+        <h2>
+            Tell Us What To Play
+        </h2>
+    </div>
+    <br>
+    <br>
+    <div class="playlist">
+        <a href="play_1.html" target="_blank"><button id="har" style="cursor: pointer;">
+                Haryanvi Beats
+            </button></a>
+        <a href="play_2.html" target="_blank"><button id="Alan" style="cursor: pointer;">
+                Western Rythms
+            </button></a>
+        <a href="play_3.html" target="_blank"><button id="cool" style="cursor: pointer;">
+                Cool Dude
+            </button></a>
+        <a href="play_4.html" target="_blank"><button id="Hindi" style="cursor: pointer;">
+                Hindi ~ Punjabi Flavour
+            </button></a>
+    </div><br>
+    <hr>
+    <br>
+    <br>
+    <div class="footer">
+        Ⓒ Indion Techs. Inc. , 2022
+    </div>
+    <hr>
+</body>
+<style>
+    @media (max-width:900px) {
+        .header {
+            height: 50vh;
+            width: 100vw;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header img {
+            padding-left: 70px;
+            padding-top: 60px;
+            width: 60vw;
+            height: 30vh;
+        }
+
+        .header h1 {
+            font-size: 25px;
+            width: 70vw;
+        }
+
+        .playlist {
+            flex-direction: column;
+            width: 90vw;
+            justify-content: center;
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+
+        #har,
+        #Alan,
+        #cool,
+        #Hindi {
+            margin: 10px;
+            width: 80vw;
+            height: 20vh;
+        }
+
+        .footer {
+            width: 100vw;
+        }
+
+        .greet {
+            width: 100vw;
+        }
+        nav {
+            width: 100vw;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            list-style: none;
+            padding: 20px 40px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: larger;
+        }
+    }
+</style>
+
+</html>
