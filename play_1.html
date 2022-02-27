@@ -70,6 +70,13 @@
         </audio>
         <img src="Play.png" alt="play" id="icon_6">
     </div><br>
+    <div class="s7">
+        <h3>The Villagers</h3>
+        <audio controls id="song_7">
+            <source src="The-Villagers.mp3" type="audio/mp3">
+        </audio>
+        <img src="Play.png" alt="play" id="icon_7">
+    </div><br>
     <br><hr><br>
     <div class="footer">
         Ⓒ Indion Techs. Inc. , 2022
@@ -172,6 +179,18 @@
         else{
             song_6.pause();
             icon_6.src="Play.png";
+        }
+    }
+    var song_7 = document.getElementById("song_7");
+    var icon_7 = document.getElementById('icon_7');
+    icon_7.onclick = function(){
+        if(song_7.paused){
+            song_7.play();
+            icon_7.src="Pause.png";
+        }
+        else{
+            song_7.pause();
+            icon_7.src="Play.png";
         }
     }
 </script>
