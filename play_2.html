@@ -98,26 +98,26 @@
         </audio>
         <img src="Play.png" alt="play" id="icon_10">
     </div><br>
-    <div class="s10">
+    <div class="s11">
         <h3>Safari</h3>
-        <audio controls id="song_10">
+        <audio controls id="song_11">
             <source src="Safari.mp3" type="audio/mp3">
         </audio>
-        <img src="Play.png" alt="play" id="icon_10">
+        <img src="Play.png" alt="play" id="icon_11">
     </div><br>
-    <div class="s10">
+    <div class="s12">
         <h3>Unstoppable</h3>
-        <audio controls id="song_10">
+        <audio controls id="song_12">
             <source src="Unstoppable.mp3" type="audio/mp3">
         </audio>
-        <img src="Play.png" alt="play" id="icon_10">
+        <img src="Play.png" alt="play" id="icon_12">
     </div><br>
-    <div class="s10">
+    <div class="s13">
         <h3>Hey Mama</h3>
-        <audio controls id="song_10">
+        <audio controls id="song_13">
             <source src="Hey-Mama.mp3" type="audio/mp3">
         </audio>
-        <img src="Play.png" alt="play" id="icon_10">
+        <img src="Play.png" alt="play" id="icon_13">
     </div><br>
     <br>
     <hr><br>
@@ -156,7 +156,10 @@
         .s7,
         .s8,
         .s9,
-        .s10 {
+        .s10 ,
+        .s11,
+        .s12,
+        .s13{
             flex-direction: column;
             padding-left: 20px;
         }
@@ -283,6 +286,42 @@
         else {
             song_10.pause();
             icon_10.src = "Play.png";
+        }
+    }
+    var song_11 = document.getElementById("song_11");
+    var icon_11 = document.getElementById('icon_11');
+    icon_11.onclick = function () {
+        if (song_11.paused) {
+            song_11.play();
+            icon_11.src = "Pause.png";
+        }
+        else {
+            song_11.pause();
+            icon_11.src = "Play.png";
+        }
+    }
+    var song_12 = document.getElementById("song_12");
+    var icon_12 = document.getElementById('icon_12');
+    icon_12.onclick = function () {
+        if (song_12.paused) {
+            song_12.play();
+            icon_12.src = "Pause.png";
+        }
+        else {
+            song_12.pause();
+            icon_12.src = "Play.png";
+        }
+    }
+    var song_13 = document.getElementById("song_13");
+    var icon_13 = document.getElementById('icon_13');
+    icon_13.onclick = function () {
+        if (song_13.paused) {
+            song_13.play();
+            icon_13.src = "Pause.png";
+        }
+        else {
+            song_13.pause();
+            icon_13.src = "Play.png";
         }
     }
 </script>
